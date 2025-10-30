@@ -812,16 +812,10 @@ function App() {
 
           {/* Owner Dashboard */}
     <TabsContent value="owner" className="space-y-8">
-      {/* Temporarily disabled for deployment
       <OwnerBackendSystem
         isGringo={isGringo}
         currentLanguage={currentLanguage}
       />
-      */}
-      <div className="text-center py-8">
-        <h3 className="text-2xl font-bold mb-4">🚀 Owner Dashboard Coming Soon</h3>
-        <p className="text-muted-foreground">Advanced business management tools will be available shortly.</p>
-      </div>
     </TabsContent>
         </Tabs>
         )}
@@ -876,12 +870,11 @@ function App() {
         <CartDrawer />
       )}
 
-    {/* Real-time Chat Support - Temporarily disabled for deployment
+    {/* Real-time Chat Support */}
     <RealTimeChat
       currentLanguage={currentLanguage}
       isGringo={detectUserType(currentLanguage?.code || 'en')}
     />
-    */}
 
       <Toaster position="top-right" />
     </div>
